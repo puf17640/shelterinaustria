@@ -21,7 +21,7 @@ export default () => {
       <div className="max-w-lg px-2 py-16 mx-auto text-center sm:px-0">
         <div className="mb-8">
           <h2 className="text-base leading-loose uppercase">
-            Help people in Ukraine
+            Help people from Ukraine
           </h2>
           <h1 className="my-4 text-5xl font-light uppercase">
             <Link href="/">Shelter in Austria</Link>

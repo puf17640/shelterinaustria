@@ -10,7 +10,7 @@ export default () => {
       <div className="max-w-lg px-2 mx-auto my-16 text-center sm:px-0">
         <div className="mb-8">
           <h2 className="text-base leading-loose uppercase">
-            Help people in Ukraine
+            Help people from Ukraine
           </h2>
           <a href="/">
             <h1 className="my-4 text-5xl font-light uppercase">
