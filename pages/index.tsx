@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default () => {
   const submitForm = async (e) => {
@@ -22,11 +23,9 @@ export default () => {
           <h2 className="text-base leading-loose uppercase">
             Help people in Ukraine
           </h2>
-          <a href="/">
-            <h1 className="my-4 text-5xl font-light uppercase">
-              Shelter in Austria
-            </h1>
-          </a>
+          <h1 className="my-4 text-5xl font-light uppercase">
+            <Link href="/">Shelter in Austria</Link>
+          </h1>
           <h2 className="text-base leading-loose uppercase">
             People who can provide shelters or any other help in Austria
           </h2>
@@ -108,15 +107,42 @@ export default () => {
               DSGVO)
             </p>
           </div>
-          <h2 className="font-bold uppercase">
-            Resources for ukrainian refugees and supporters
-          </h2>
-          <a
-            className="underline underline-offset-1"
-            href="https://docs.google.com/document/d/1OlZIz-72A2xI2uUOFE07L5ObQGP4JDcXZ2vdIs2P9BQ/"
-          >
-            https://docs.google.com/document/d/1OlZIz-72A2xI2uUOFE07L5ObQGP4JDcXZ2vdIs2P9BQ/
-          </a>
+          <div className="mb-8">
+            <h2 className="font-bold uppercase">
+              Resources for ukrainian refugees and supporters
+            </h2>
+            <a
+              className="underline underline-offset-1"
+              href="https://docs.google.com/document/d/1OlZIz-72A2xI2uUOFE07L5ObQGP4JDcXZ2vdIs2P9BQ/"
+            >
+              https://docs.google.com/document/d/1OlZIz-72A2xI2uUOFE07L5ObQGP4JDcXZ2vdIs2P9BQ/
+            </a>
+          </div>
+          <div className="flex flex-col gap-4 mx-auto">
+            <div className="cursor-pointer">
+              <Link href="/about">
+                <div className="px-8 py-2 uppercase transition-colors bg-peach-400 hover:bg-peach-500 rounded-3xl">
+                  About
+                </div>
+              </Link>
+            </div>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://shelterinberlin.info"
+              className="px-8 py-2 uppercase transition-colors bg-peach-400 hover:bg-peach-500 rounded-3xl"
+            >
+              Shelter In Berlin
+            </a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://shelterinbavaria.site"
+              className="px-8 py-2 uppercase transition-colors bg-peach-400 hover:bg-peach-500 rounded-3xl"
+            >
+              Shelter In Bavaria
+            </a>
+          </div>
         </div>
       </div>
     </>
